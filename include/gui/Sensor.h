@@ -70,8 +70,8 @@ public:
 
     // LightFlattenable protocol
     inline bool isFixedSize() const { return false; }
-    size_t getFlattenedSize() const;
-    status_t flatten(void* buffer, size_t size) const;
+    size_t getSize() const;
+    status_t flatten(void* buffer) const;
     status_t unflatten(void const* buffer, size_t size);
 
 private:
